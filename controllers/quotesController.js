@@ -1,4 +1,4 @@
-var Quote = require("../models/quote");
+var User = require("../models/User");
 
 module.exports = {
   // This method handles retrieving quotes from the db
@@ -10,7 +10,7 @@ module.exports = {
     else {
       query = req.params.id ? { _id: req.params.id } : {};
     }
-    Quote.find(query)
+    User.find(query)
       .then(function(doc) {
         res.json(doc);
       }).catch(function(err) {
@@ -19,7 +19,7 @@ module.exports = {
   },
   // This method handles creating new quotes
   create: function(req, res) {
-    Quote.create(req.body).then(function(doc) {
+    User.create(req.body).then(function(doc) {
       res.json(doc);
     }).catch(function(err) {
       res.json(err);
@@ -39,7 +39,7 @@ module.exports = {
   },
   // This method handles deleting quotes
   destroy: function(req, res) {
-    Quote.remove({
+    QUser.remove({
       _id: req.params.id
     }).then(function(doc) {
       res.json(doc);
