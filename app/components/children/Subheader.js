@@ -6,10 +6,15 @@ class  Subheader extends React.Component {
 
 
   render() {
-  return ( 
-    <div id="menuContainer">
+  return (
 
+    <div id="menuContainer">
       <section id="fh5co-hero" className="js-fullheight" data-next="yes">
+        <video poster="http://eyday.net/Titas%20Communications%20/Assets/Bakgrund.png" autoplay="true" loop>
+          <source src="http://s3-eu-west-1.amazonaws.com/docplanner.com/video/timelapse.mp4" type="video/mp4"></source>
+          <source type="video/webm" src="//s3-eu-west-1.amazonaws.com/docplanner.com/video/timelapse.webm"></source>
+        </video>
+
         <div className="fh5co-overlay"></div>
         <div className="container">
           <div className="fh5co-intro">
