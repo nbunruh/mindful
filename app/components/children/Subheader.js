@@ -6,9 +6,9 @@ class  Subheader extends React.Component {
 
 
   render() {
-  return ( 
-    <div id="menuContainer">
+  return (
 
+    <div id="menuContainer">
       <section id="fh5co-hero" className="js-fullheight" data-next="yes">
         <div className="fh5co-overlay"></div>
         <div className="container">
